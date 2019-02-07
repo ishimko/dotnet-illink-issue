@@ -1,0 +1,1 @@
+dotnet publish Main/Main.csproj -f netcoreapp2.1 -r rhel.6-x64 

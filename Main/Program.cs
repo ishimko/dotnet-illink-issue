@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace temp
+namespace Main
 {
     class Program
     {
