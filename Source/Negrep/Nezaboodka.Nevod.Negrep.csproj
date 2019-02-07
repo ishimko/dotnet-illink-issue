@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.1</TargetFrameworks>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <RuntimeIdentifiers>alpine-x64;rhel.6-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\Build\Debug\bin\Nezaboodka.Nevod.Negrep</OutputPath>
+    <IntermediateOutputPath>..\..\Build\Debug\obj\Nezaboodka.Nevod.Negrep</IntermediateOutputPath>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Build\Release\bin\Nezaboodka.Nevod.Negrep</OutputPath>
+    <IntermediateOutputPath>..\..\Build\Release\obj\Nezaboodka.Nevod.Negrep</IntermediateOutputPath>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Nevod\Nezaboodka.Nevod.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.4.3" />
+    <PackageReference Include="ILLink.Tasks" Version="0.1.5-preview-1841731" />
+  </ItemGroup>
+
+</Project>
