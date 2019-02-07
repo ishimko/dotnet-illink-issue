@@ -1,5 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\Build\Packages\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
-  </PropertyGroup>
-</Project>
