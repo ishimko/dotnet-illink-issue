@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Libraries\Lib\Lib.csproj" />
+    <ProjectReference Include="..\Lib\Lib_TargetFrameworks.csproj" />
   </ItemGroup>
 
   <ItemGroup>
